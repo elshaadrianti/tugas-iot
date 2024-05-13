@@ -8,5 +8,8 @@
 </head>
 <body>
     <h1>Devices</h1>
+
+    <h2><?php echo 'Nama Device: ' .$name;?></h2>
+    <h3><?php echo 'Current Value: ' .$current_value . '(Range: ' . $min_value .  '-' . $max_value . ')';?></h3>
 </body>
 </html>
