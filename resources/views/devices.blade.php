@@ -4,12 +4,13 @@
     @php
         $i = 1;
     @endphp
+
     <table class="table">
         <thead>
             <tr>
                 <th scope="col">#</th>
                 <th scope="col">ID</th>
-                <th scope="col">Devices Name</th>
+                <th scope="col">Device Name</th>
                 <th scope="col">Minimum Value</th>
                 <th scope="col">Maximum Value</th>
                 <th scope="col">Current Value</th>
@@ -22,6 +23,7 @@
                     <td>
                         <a href="/devices/{{ $device['id'] }}">{{ $device['id'] }}</a>
                     </td>
+
                     <td>{{ $device['name'] }}</td>
                     <td>{{ $device['min_value'] }}</td>
                     <td>{{ $device['max_value'] }}</td>
@@ -31,7 +33,6 @@
                     $i++;
                 @endphp
             @endforeach
-
         </tbody>
     </table>
 @endsection
