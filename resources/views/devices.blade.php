@@ -19,7 +19,9 @@
             @foreach ($devices as $device)
                 <tr>
                     <td>{{ $i }}</td>
-                    <td>{{ $device['id'] }}</td>
+                    <td>
+                        <a href="/devices/{{ $device['id'] }}">{{ $device['id'] }}</a>
+                    </td>
                     <td>{{ $device['name'] }}</td>
                     <td>{{ $device['min_value'] }}</td>
                     <td>{{ $device['max_value'] }}</td>
